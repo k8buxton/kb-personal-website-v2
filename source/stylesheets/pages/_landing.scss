@@ -1,0 +1,253 @@
+.heading {
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+.css-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(2, 400px);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.grid-item-one {
+  // background: #C4C9CD;
+  background-image: linear-gradient(to right, rgba(15,32,39,0.95), rgba(32,58,67,0.95), rgba(44,83,100,0.95)), image-url('london-buildings.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  display: block;
+  transition: all 2s ease;
+}
+.grid-item-one:hover {
+  background-image: image-url('london-buildings.png');
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+}
+.grid-item-two {
+  background-image: linear-gradient(to right, rgba(15,32,39,0.95), rgba(32,58,67,0.95), rgba(44,83,100,0.95)), image-url('devici4.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  display: block;
+}
+.grid-item-two:hover {
+  background-image: image-url('devici4.png');
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+  transition: all 2s ease;
+}
+.grid-item-three {
+  background-image: linear-gradient(to right, rgba(15,32,39,0.95), rgba(32,58,67,0.95), rgba(44,83,100,0.95)), image-url('bridge3.png');
+  background-size: cover;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  // transition: all 2s ease;
+}
+.grid-item-three-width {
+  max-width: 320px;
+}
+.grid-item-three:hover {
+  background-image: image-url('bridge3.png');
+  background-size: cover;
+  color: rgba(255, 255, 255, 0);
+  transition: all 2s ease;
+}
+.max-width {
+  max-width: 570px;
+}
+.title {
+  font-family: 'Avenir', serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+.strapline {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+.text {
+  font-family: 'Avenir', serif;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  margin-top: 22px;
+}
+.grid-padding {
+  padding: 50px 0px 0px 40px;
+}
+.css-grid a {
+  color: rgb(220, 220, 220);
+}
+
+
+
+
+// arrow animation
+
+.arrow-wrapper {
+  width: 100%;
+  height: 20px;
+  margin-top: 140px;
+}
+.arrow-wrapper-two {
+  width: 100%;
+  height: 20px;
+  margin-top: -20px;
+}
+.arrow {
+  width: 38px;
+  height: 14px;
+  margin: auto;
+  letter-spacing: 3px;
+  top: 350px;
+  // opacity: 0.5;
+  transition: ease 1s;
+  -webkit-animation: bouncey 1.6s linear infinite;
+          animation: bouncey 1.6s linear infinite;
+}
+.arrow ul {
+  list-style: none;
+}
+.arrow ul li {
+  width: 24px;
+  height: 4px;
+  background: #06E5C8;
+}
+.arrow ul li:nth-child(1) {
+  left: 0;
+  top: 0;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 0;
+}
+.arrow ul li:nth-child(2) {
+  left: 14px;
+  position: absolute;
+  border-radius: 0;
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+@-webkit-keyframes bouncey {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes bouncey {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+
+
+// heading animation
+
+body {
+  color: #F4F4F8
+}
+.text-container {
+  position: absolute;
+  max-width: 300px !important;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: rgb(20, 20, 20);
+  font-family: "Playfair Display", "serif";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 48px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+span {
+  display: inline-block;
+}
+
+.reg-text {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  transition: opacity 5s ease, -webkit-transform 3.3333333333s ease-out;
+  transition: transform 3.3333333333s ease-out, opacity 5s ease;
+  transition: transform 3.3333333333s ease-out, opacity 5s ease, -webkit-transform 3.3333333333s ease-out;
+}
+.reg-text.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.letter {
+  transition: opacity 5s ease, -webkit-transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), -webkit-filter 5s ease;
+  transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease, opacity 5s ease;
+  transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease, opacity 5s ease, -webkit-transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), -webkit-filter 5s ease;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+.letter:nth-of-type(2) {
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+  transition-duration: 2.5s;
+}
+.letter:nth-of-type(3) {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateY(-170px);
+          transform: translateY(-170px);
+  transition-duration: 3.8461538462s;
+}
+.letter:nth-of-type(4) {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  transition-duration: 3.3333333333s;
+}
+.letter:nth-of-type(5) {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  transition-duration: 2.5s;
+}
+.letter:nth-of-type(6) {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
+  transition-duration: 2.1739130435s;
+}
+.letter.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+
