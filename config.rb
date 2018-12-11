@@ -20,3 +20,12 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+
+# Heroku-ready
+
+# Use “pretty” URLs (without the `.html` suffix)
+activate :directory_indexes
+
+# Append hashes to compiled assets
+activate :asset_hash

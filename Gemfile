@@ -11,3 +11,10 @@ gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
+# Heroku-ready
+gem 'rake'
+gem 'puma'
+gem 'rack-contrib'
+
+source "https://rubygems.org"
+ruby "~> 2.4.0"
