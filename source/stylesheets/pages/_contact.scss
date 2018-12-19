@@ -17,11 +17,36 @@
   padding-left: 100px;
   font-size: 40px;
 }
-.contact-details {
-  width: 75vh !important;
-  text-align: center;
-  line-height: 1.5em;
+
+
+@media (max-width: 600px) {
+  .contact-details {
+    width: 50vh !important;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .contact {
+  letter-spacing: 3px;
+  color: white;
+  padding-left: 40px;
+  font-size: 40px;
+  }
 }
+@media (min-width: 600px) {
+  .contact-details {
+    width: 75vh !important;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  .contact {
+  letter-spacing: 3px;
+  color: white;
+  padding-left: 100px;
+  font-size: 40px;
+  }
+}
+
+
 .address {
   color: grey;
   letter-spacing: 1px;
