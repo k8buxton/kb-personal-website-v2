@@ -1,6 +1,14 @@
 .heading {
-  margin-top: 150px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
+  background-image: image-url('bricks2.png');
+  background-size: cover;
+  height: 120vh;
+}
+.container {
+  width: 100vw;
+}
+.container-margin-top {
+  margin-top: -100px;
 }
 .css-grid {
   display: grid;
@@ -9,11 +17,9 @@
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   color: white;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 100px;
 }
 .grid-item-one {
-  // background: #C4C9CD;
   background-image: linear-gradient(to right, rgba(15,32,39,0.95), rgba(32,58,67,0.95), rgba(44,83,100,0.95)), image-url('london-buildings.png');
   background-size: cover;
   background-position: center;
@@ -66,13 +72,14 @@
 }
 .title {
   font-family: 'Avenir', serif;
-  font-size: 14px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 .strapline {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  letter-spacing: 3px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 .text {
   font-family: 'Avenir', serif;
@@ -86,7 +93,13 @@
 .css-grid a {
   color: rgb(220, 220, 220);
 }
-
+.projects {
+  margin-top: 500px;
+  margin-bottom: -20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
 
 
 
@@ -95,12 +108,12 @@
 .arrow-wrapper {
   width: 100%;
   height: 20px;
-  margin-top: 140px;
+  margin-top: 10px;
 }
 .arrow-wrapper-two {
   width: 100%;
   height: 20px;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 .arrow {
   width: 38px;
@@ -108,7 +121,6 @@
   margin: auto;
   letter-spacing: 3px;
   top: 350px;
-  // opacity: 0.5;
   transition: ease 1s;
   -webkit-animation: bouncey 1.6s linear infinite;
           animation: bouncey 1.6s linear infinite;
@@ -117,8 +129,8 @@
   list-style: none;
 }
 .arrow ul li {
-  width: 24px;
-  height: 4px;
+  width: 23px;
+  height: 3px;
   background: #06E5C8;
 }
 .arrow ul li:nth-child(1) {
@@ -168,6 +180,9 @@
 
 
 
+
+
+
 // heading animation
 
 body {
@@ -179,13 +194,15 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: rgb(20, 20, 20);
+  // color: rgb(20, 20, 20);
+  color: white;
   font-family: "Playfair Display", "serif";
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 48px;
   -webkit-font-smoothing: antialiased;
   text-align: center;
+  margin-top: 350px;
 }
 span {
   display: inline-block;
@@ -198,11 +215,13 @@ span {
   transition: opacity 5s ease, -webkit-transform 3.3333333333s ease-out;
   transition: transform 3.3333333333s ease-out, opacity 5s ease;
   transition: transform 3.3333333333s ease-out, opacity 5s ease, -webkit-transform 3.3333333333s ease-out;
+  // margin-top: 700px;
 }
 .reg-text.loaded {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  // margin-top: 700px;
 }
 
 .letter {
