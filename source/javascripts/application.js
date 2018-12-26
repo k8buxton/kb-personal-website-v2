@@ -28,6 +28,7 @@ $(document).ready(function() {
 });
 
 
+
 // Picture zoom in and out: https://stackoverflow.com/questions/25968160/auto-zoom-in-n-out-css-apple-like-slideshow-effect
 // window.onload=function(){
 // $("#content").fadeOut(4000);

@@ -39,8 +39,7 @@
   padding: 100px;
 }
 .grid-item-one {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('london-buildings.png');
-  // background-image: linear-gradient(to right, rgba(15, 32, 39, 10.8), rgba(44, 83, 100, 0.8)), image-url('london-buildings.png');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('skyline-contractors.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -51,7 +50,7 @@
   transition: all 2s ease;
 }
 .grid-item-one:hover {
-  background-image: image-url('london-buildings.png');
+  background-image: image-url('skyline-contractors.png');
   background-size: cover;
   color: rgba(255, 255, 255, 0);
 }
@@ -96,10 +95,10 @@
   transition: all 2s ease;
 }
 .example-one {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('london-buildings.png');
+  background-image: linear-gradient(to right, rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('skyline-contractors-sm.png');
 }
 .example-one:hover {
-  background-image: image-url('london-buildings.png');
+  background-image: image-url('skyline-contractors-sm.png');
   background-size: cover;
   color: rgba(255, 255, 255, 0);
 }
@@ -147,6 +146,7 @@
   font-size: 14px;
   letter-spacing: 1.3px;
   margin-top: 22px;
+  margin-right: 40px;
 }
 .grid-padding {
   padding: 50px 0px 0px 40px;
@@ -155,6 +155,18 @@
   color: rgb(220, 220, 220);
 }
 .projects {
+  @media (max-width: 548px) {
+    margin-top: 400px;
+  }
+  @media (min-width: 549px) {
+    margin-top: 500px;
+  }
+  margin-bottom: -20px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.smoothScroll {
   @media (max-width: 548px) {
     margin-top: 400px;
   }
