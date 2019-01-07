@@ -1,6 +1,6 @@
 .heading {
   margin-bottom: 80px;
-  background-image: image-url('bricks2.png');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), image-url('bricks2.jpeg');
   background-size: cover;
   background-attachment: fixed;
   @media (max-width: 548px) {
@@ -39,7 +39,7 @@
   padding: 100px;
 }
 .grid-item-one {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('skyline-contractors.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('skyline-contractors.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -55,7 +55,7 @@
   color: rgba(255, 255, 255, 0);
 }
 .grid-item-two {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('devici.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('devici.png');
 
   background-size: cover;
   background-position: center;
@@ -72,7 +72,7 @@
   transition: all 2s ease;
 }
 .grid-item-three {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(44,83,100,0.95)), image-url('bridge3.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(44,83,100,0.95)), image-url('bridge3.png');
   background-size: cover;
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
@@ -95,7 +95,7 @@
   transition: all 2s ease;
 }
 .example-one {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('skyline-contractors-sm.png');
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('skyline-contractors-sm.png');
 }
 .example-one:hover {
   background-image: image-url('skyline-contractors-sm.png');
@@ -103,7 +103,7 @@
   color: rgba(255, 255, 255, 0);
 }
 .example-two {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('devici2.png');
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('devici2.png');
 }
 .example-two:hover {
   background-image: image-url('devici2.png');
@@ -111,7 +111,7 @@
   color: rgba(255, 255, 255, 0);
 }
 .example-three {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('bridge3.png');
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('bridge3.png');
 }
 .example-three:hover {
   background-image: image-url('bridge-sm.png');
@@ -131,7 +131,7 @@
 
 .title {
   font-family: 'Avenir', serif;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 3px;
   font-weight: 500;
   text-decoration: underline;
@@ -140,10 +140,11 @@
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   letter-spacing: 2px;
+  padding-top: 10px;
 }
 .text {
   font-family: 'Avenir', serif;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1.3px;
   margin-top: 22px;
   margin-right: 40px;
@@ -162,7 +163,7 @@
     margin-top: 500px;
   }
   margin-bottom: -20px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2px;
   font-weight: 400;
 }
@@ -269,7 +270,7 @@ body {
 
 .text-container {
   position: absolute;
-  max-width: 300px !important;
+  max-width: 320px !important;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
