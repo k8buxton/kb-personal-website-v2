@@ -25,8 +25,11 @@
     </a>
   </div>
 </div>
+<div class="container" id="my-work">
+
+</div>
 <div class="container hidden-xs hidden-sm">
-  <div class="row" id="my-work" style="margin-bottom: 40px;">
+  <div class="row" style="margin-bottom: 40px;">
     <div class="col-xs-12">
       <div class="css-grid" id="identifier">
         <a href="https://skyline-contactors.herokuapp.com/", class="grid-item-one grid-padding">
@@ -84,6 +87,18 @@
     </div>
   </div>
 </a>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
 
 <!-- Picture zoom in and out: https://stackoverflow.com/questions/25968160/auto-zoom-in-n-out-css-apple-like-slideshow-effect -->
 

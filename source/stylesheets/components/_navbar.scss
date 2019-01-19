@@ -68,6 +68,10 @@ a {
   font-weight: 400;
   padding: 0px 20px;
 }
+a:focus {
+  color: white;
+  text-decoration: none;
+}
 a:hover {
   color: #06E5C8;
   text-decoration: none;

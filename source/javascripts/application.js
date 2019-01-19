@@ -27,6 +27,22 @@ $(document).ready(function() {
         });
 });
 
+// https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+// let anchorlinks = document.querySelectorAll('a[href^="#"]')
+
+// for (let item of anchorlinks) { // relitere
+//     item.addEventListener('click', (e)=> {
+//         let hashval = item.getAttribute('href')
+//         let target = document.querySelector(hashval)
+//         target.scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'start'
+//         })
+//         history.pushState(null, null, hashval)
+//         e.preventDefault()
+//     })
+// }
+
 
 
 // Picture zoom in and out: https://stackoverflow.com/questions/25968160/auto-zoom-in-n-out-css-apple-like-slideshow-effect

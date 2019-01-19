@@ -48,15 +48,16 @@
   grid-row: 1 / span 1;
   display: block;
   transition: all 2s ease;
+  border-radius: 3px;
 }
 .grid-item-one:hover {
   background-image: image-url('skyline-contractors.png');
   background-size: cover;
   color: rgba(255, 255, 255, 0);
+  border-radius: 3px;
 }
 .grid-item-two {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('devici.png');
-
   background-size: cover;
   background-position: center;
   position: relative;
@@ -64,18 +65,21 @@
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
   display: block;
+  border-radius: 3px;
 }
 .grid-item-two:hover {
   background-image: image-url('devici.png');
   background-size: cover;
   color: rgba(255, 255, 255, 0);
   transition: all 2s ease;
+  border-radius: 3px;
 }
 .grid-item-three {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(44,83,100,0.95)), image-url('bridge3.png');
   background-size: cover;
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
+  border-radius: 3px;
 }
 .grid-item-three-width {
   @media (min-width: 1175px) {
@@ -93,6 +97,7 @@
   background-size: cover;
   color: rgba(255, 255, 255, 0);
   transition: all 2s ease;
+  border-radius: 3px;
 }
 .example-one {
   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('skyline-contractors-sm.png');
@@ -124,9 +129,11 @@
   height: 420px;
   transition: all 2s ease;
   margin: 20px 40px;
+  border-radius: 3px;
 }
 .sm-text {
   padding: 50px 40px 0px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .title {
@@ -151,6 +158,7 @@
 }
 .grid-padding {
   padding: 50px 0px 0px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .css-grid a {
   color: rgb(220, 220, 220);
@@ -286,7 +294,7 @@ body {
     }
     @media (min-width: 549px) {
       font-size: 48px;
-      margin-top: 350px;
+      margin-top: 330px;
     }
 }
 
