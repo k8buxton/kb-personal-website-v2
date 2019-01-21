@@ -7,12 +7,12 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="stylesheets/application-ec13d1c2.css" rel="stylesheet" />
+    <link href="stylesheets/application-c5f0bf39.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <script src="javascripts/application-54d9ae33.js"></script>
+    <script src="javascripts/application-fd2f0bbf.js"></script>
   </head>
   <body>
-    <div class="navbar navbar-two navbar-fixed-top">
+    <div class="navbar navbar-two">
   <a href="./" class="navbar-left navbar-item-left">KB</a>
   <div class="navbar-right hidden-xs">
     <a class: "navbar-item-right navbar-link", href="#identifier">MY WORK</a>
@@ -53,8 +53,11 @@
     </a>
   </div>
 </div>
+<div class="container" id="my-work">
+
+</div>
 <div class="container hidden-xs hidden-sm">
-  <div class="row" id="my-work" style="margin-bottom: 40px;">
+  <div class="row" style="margin-bottom: 40px;">
     <div class="col-xs-12">
       <div class="css-grid" id="identifier">
         <a href="https://skyline-contactors.herokuapp.com/", class="grid-item-one grid-padding">
@@ -112,6 +115,18 @@
     </div>
   </div>
 </a>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
 
 <!-- Picture zoom in and out: https://stackoverflow.com/questions/25968160/auto-zoom-in-n-out-css-apple-like-slideshow-effect -->
 
