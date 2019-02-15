@@ -18,8 +18,8 @@ $(document).on('ready', function () {
 $(document).ready(function() {
         // Transition effect for navbar
         $(window).scroll(function() {
-          // checks if window is scrolled more than 20px, adds/removes solid class
-          if($(this).scrollTop() > 20) {
+          // checks if window is scrolled more than height of window, adds/removes solid class
+          if($(this).scrollTop() > window.innerHeight) {
               $('.navbar').addClass('solid');
           } else {
               $('.navbar').removeClass('solid');

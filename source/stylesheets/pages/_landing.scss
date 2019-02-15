@@ -1,303 +1,59 @@
-.heading {
-  margin-bottom: 80px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), image-url('bricks2.jpeg');
-  background-size: cover;
-  background-attachment: fixed;
-  @media (max-width: 548px) {
-    height: 100vh;
-  }
-  @media (min-width: 549px) {
-    height: 120vh;
-  }
+p {
+  color: #383838;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
-@media (max-width: 600px) {
-  .contact-details {
-    width: 50vh !important;
-    text-align: center;
-    line-height: 1.5em;
-  }
-  .contact {
+.heading {
+  background-image: image-url('summer_isles_bw.jpg');
+  // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), image-url('summer_isles.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+.header {
   letter-spacing: 3px;
-  color: white;
-  padding-left: 40px;
-  font-size: 40px;
-  }
+  width: 350px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: 0.5px 0.5px 1px #D8D8D8;
 }
 .container {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-margin-top {
   margin-top: -100px;
 }
-.css-grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: repeat(2, 400px);
-  grid-column-gap: 12px;
-  grid-row-gap: 12px;
-  color: white;
-  padding: 100px;
-}
-.grid-item-one {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('skyline-contractors.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  display: block;
-  transition: all 2s ease;
-  border-radius: 3px;
-}
-.grid-item-one:hover {
-  background-image: image-url('skyline-contractors.png');
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);
-  border-radius: 3px;
-}
-.grid-item-two {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), image-url('devici.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
-  display: block;
-  border-radius: 3px;
-}
-.grid-item-two:hover {
-  background-image: image-url('devici.png');
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);
-  transition: all 2s ease;
-  border-radius: 3px;
-}
-.grid-item-three {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(44,83,100,0.95)), image-url('bridge3.png');
-  background-size: cover;
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 2;
-  border-radius: 3px;
-}
-.grid-item-three-width {
-  @media (min-width: 1175px) {
-    max-width: 320px;
+.container-text {
+  justify-content: center;
+  text-align: center;
+  @media (max-width: 991px) {
+    margin: 100px 50px;
   }
-  @media (max-width: 1175px) {
-      max-width: 250px;
-  }
-  @media (max-width: 1000px) {
-      max-width: 200px;
+  @media (min-width: 992px) {
+    margin: 150px 250px;
   }
 }
-.grid-item-three:hover {
-  background-image: image-url('bridge3.png');
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);
-  transition: all 2s ease;
-  border-radius: 3px;
-}
-.example-one {
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('skyline-contractors-sm.png');
-}
-.example-one:hover {
-  background-image: image-url('skyline-contractors-sm.png');
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);
-}
-.example-two {
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('devici2.png');
-}
-.example-two:hover {
-  background-image: image-url('devici2.png');
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);
-}
-.example-three {
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), image-url('bridge3.png');
-}
-.example-three:hover {
-  background-image: image-url('bridge-sm.png');
-  background-size: cover;
-  color: rgba(255, 255, 255, 0);
-}
-.sm-items {
-  background-size: cover;
-  background-position: center;
-  height: 420px;
-  transition: all 2s ease;
-  margin: 20px 40px;
-  border-radius: 3px;
-}
-.sm-text {
-  padding: 50px 40px 0px 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.text-section {
+  margin: 50px 0;
 }
 
-.title {
-  font-family: 'Avenir', serif;
-  font-size: 14px;
-  letter-spacing: 3px;
-  font-weight: 500;
-  text-decoration: underline;
+.contact {
+  height: 50vh;
+  display: flex;
+  align-items: center;
 }
-.strapline {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-  padding-top: 10px;
-}
-.text {
-  font-family: 'Avenir', serif;
-  font-size: 16px;
-  letter-spacing: 1.3px;
-  margin-top: 22px;
-  margin-right: 40px;
-}
-.grid-padding {
-  padding: 50px 0px 0px 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-.css-grid a {
-  color: rgb(220, 220, 220);
-}
-.projects {
-  @media (max-width: 548px) {
-    margin-top: 400px;
-  }
-  @media (min-width: 549px) {
-    margin-top: 500px;
-  }
-  margin-bottom: -20px;
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-weight: 400;
-}
-.smoothScroll {
-  @media (max-width: 548px) {
-    margin-top: 400px;
-  }
-  @media (min-width: 549px) {
-    margin-top: 500px;
-  }
-  margin-bottom: -20px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-weight: 400;
-}
-
-
-
-// arrow animation
-
-.arrow-wrapper {
-  width: 100%;
-  height: 20px;
-  margin-top: 10px;
-}
-.arrow-wrapper-two {
-  width: 100%;
-  height: 20px;
-  margin-top: -10px;
-}
-.arrow {
-  width: 38px;
-  height: 14px;
-  margin: auto;
-  letter-spacing: 3px;
-  top: 350px;
-  transition: ease 1s;
-  -webkit-animation: bouncey 1.6s linear infinite;
-          animation: bouncey 1.6s linear infinite;
-}
-.arrow ul {
-  list-style: none;
-}
-.arrow ul li {
-  width: 23px;
-  height: 3px;
-  background: #06E5C8;
-}
-.arrow ul li:nth-child(1) {
-  left: 0;
-  top: 0;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  border-radius: 0;
-}
-.arrow ul li:nth-child(2) {
-  left: 14px;
-  position: absolute;
-  border-radius: 0;
-  top: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-@-webkit-keyframes bouncey {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@keyframes bouncey {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-
-
-
-
 
 // heading animation
 
 body {
   color: #F4F4F8
 }
-
-.text-container {
-  position: absolute;
-  max-width: 320px !important;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Playfair Display", "serif";
-  font-weight: 500;
-  letter-spacing: 1px;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-    @media (max-width: 548px) {
-      font-size: 38px;
-      margin-top: 250px;
-    }
-    @media (min-width: 549px) {
-      font-size: 48px;
-      margin-top: 330px;
-    }
-}
-
 span {
   display: inline-block;
 }
@@ -309,15 +65,12 @@ span {
   transition: opacity 5s ease, -webkit-transform 3.3333333333s ease-out;
   transition: transform 3.3333333333s ease-out, opacity 5s ease;
   transition: transform 3.3333333333s ease-out, opacity 5s ease, -webkit-transform 3.3333333333s ease-out;
-  // margin-top: 700px;
 }
 .reg-text.loaded {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  // margin-top: 700px;
 }
-
 .letter {
   transition: opacity 5s ease, -webkit-transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), -webkit-filter 5s ease;
   transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease, opacity 5s ease;
@@ -362,23 +115,4 @@ span {
   -webkit-filter: blur(0);
           filter: blur(0);
 }
-
-
-// Picture zoom in and out: https://stackoverflow.com/questions/25968160/auto-zoom-in-n-out-css-apple-like-slideshow-effect
-
-// #background{
-//   position:absolute;
-//   top:0px;
-//   left:0px;
-//   width:100%;
-//   height:100%;
-//   background:url("http://watchingtheworldcup.com/photos/worldcup1.jpg") center center no-repeat;
-//   background-size: 100% 100%;
-//   display:inline-block;
-//   z-index:2;
-//   transition:all ease 4.1s;
-// }
-// .zoom{
-//   transform:scale(1.2,1.2);
-// }
 

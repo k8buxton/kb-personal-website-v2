@@ -6,12 +6,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title %></title>
+    <title>Kate Buxton Website Design & Development</title>
+    <meta name="description" content="London-based developer building elegant, functional and user-friendly websites for any industry.">
+    <link href="/images/favicon.ico" rel="shortcut icon">
     <%= stylesheet_link_tag "application" %>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Roboto:500,900|Open+Sans:300,400" rel="stylesheet">
     <%= javascript_include_tag "application" %>
   </head>
   <body>
+    <%= partial "layouts/navbar.html" %>
     <%= yield %>
     <%= partial "layouts/footer.html" %>
   </body>

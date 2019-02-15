@@ -1,0 +1,87 @@
+.card {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 350px;
+  padding: 0px;
+  p {
+    color: white;
+  }
+}
+.row {
+  margin: 0px;
+}
+.kill-padding {
+  padding: 0px;
+}
+.card:hover .title {
+  opacity: 1;
+}
+.card:hover .strapline {
+  opacity: 1;
+}
+.card:hover .card-line {
+  opacity: 1;
+  z-index: 10000;
+}
+.bridge {
+  background-image: image-url('bridge2.jpg');
+  background-position: left;
+}
+.bridge:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('bridge2.jpg');
+}
+.skyline {
+  background-image: image-url('skyline.jpg');
+}
+.skyline:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('skyline.jpg');
+}
+.devici {
+  background-image: image-url('devici.jpg');
+}
+.devici:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('devici.jpg');
+}
+.consulate {
+  background-image: image-url('consulate2.jpg');
+}
+.consulate:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('consulate2.jpg');
+}
+.hunter {
+  background-image: image-url('hunter2.jpg');
+}
+.hunter:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('hunter2.jpg');
+}
+.business {
+  background-image: image-url('business.jpg');
+}
+.business:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('business.jpg');
+}
+.title {
+  position: absolute;
+  bottom: 60px;
+  left: 25px;
+  opacity: 0;
+  transition: ease 1s;
+  border-bottom: 1px solid white;
+  padding-bottom: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+.strapline {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  opacity: 0;
+  transition: ease 1s;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+}
