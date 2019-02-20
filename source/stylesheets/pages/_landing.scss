@@ -48,6 +48,12 @@ p {
   display: flex;
   align-items: center;
 }
+.about-margin-top {
+  margin-top: 30px;
+}
+.about-margin-bottom {
+  margin-bottom: 50px;
+}
 
 // heading animation
 
@@ -115,4 +121,3 @@ span {
   -webkit-filter: blur(0);
           filter: blur(0);
 }
-
