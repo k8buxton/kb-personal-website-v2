@@ -6,8 +6,7 @@ p {
   font-weight: 300;
 }
 .heading {
-  background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752381/summer_isles_bw.jpg');
-  // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), image-url('summer_isles.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752381/summer_isles_bw.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -19,6 +18,7 @@ p {
   font-size: 20px;
   font-weight: 300;
   text-shadow: 0.5px 0.5px 1px #D8D8D8;
+  text-transform: uppercase;
 }
 .container {
   width: 100vw;

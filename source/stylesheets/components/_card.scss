@@ -37,67 +37,70 @@
   opacity: 1;
   z-index: 10000;
 }
+.thread {
+  background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1560518843/Screen_Shot_2019-06-14_at_14.27.02.png');
+  background-position: left;
+}
+.thread-sm {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1560518843/Screen_Shot_2019-06-14_at_14.27.02.png');
+  background-position: left;
+  margin-bottom: 30px;
+}
+.thread:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1560518843/Screen_Shot_2019-06-14_at_14.27.02.png');
 
+}
 .bridge {
   background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752369/bridge2.jpg');
   background-position: left;
 }
 .bridge-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('bridge2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752369/bridge2.jpg');
   background-position: left;
   margin-bottom: 30px;
 }
 .bridge:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('bridge2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752369/bridge2.jpg');
 }
 .skyline {
   background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752371/skyline.jpg');
 }
 .skyline-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('skyline.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752371/skyline.jpg');
   margin-bottom: 30px;
 }
 .skyline:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('skyline.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752371/skyline.jpg');
 }
 .devici {
   background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752367/devici.jpg');
 }
 .devici-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('devici.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752367/devici.jpg');
   margin-bottom: 30px;
 }
 .devici:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('devici.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752367/devici.jpg');
 }
 .consulate {
-  background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752612/consulate.png');
+  background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1560518959/Screen_Shot_2019-06-14_at_14.28.51.png');
 }
 .consulate-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('consulate2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1560518959/Screen_Shot_2019-06-14_at_14.28.51.png');
   margin-bottom: 30px;
 }
 .consulate:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('consulate2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1560518959/Screen_Shot_2019-06-14_at_14.28.51.png');
 }
 .hunter {
   background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752701/hunter.png');
 }
 .hunter-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('hunter2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752701/hunter.png');
   margin-bottom: 30px;
 }
 .hunter:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('hunter2.jpg');
-}
-.business {
-  background-image: url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752367/business.jpg');
-}
-.business-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), image-url('business.jpg');
-}
-.business:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), image-url('business.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://res.cloudinary.com/ddwuu1y0i/image/upload/v1555752701/hunter.png');
 }
 
 
@@ -111,9 +114,9 @@
   left: 25px;
   border-bottom: 1px solid white;
   padding-bottom: 25px;
-  font-weight: 300;
+  font-weight: 900;
   font-size: 16px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .strapline-lg {
   opacity: 0;
