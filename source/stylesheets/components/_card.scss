@@ -1,5 +1,6 @@
 .container-cards {
   position: relative;
+  margin: 0px 24px;
 }
 .card-smooth-id {
   position: absolute;
@@ -17,6 +18,8 @@
   display: block;
   height: 350px;
   padding: 0px;
+  margin: 16px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
   p {
     color: white;
   }
